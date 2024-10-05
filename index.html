@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Center Wilayah 10</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h1><img src="fojbwil10.png" alt="Logo" class="sidebar-logo"> Business Center Wilayah 10</h1>
+        <ul>
+            <li><a href="#" id="menu-link">Menu</a></li>
+            <li><a href="#" id="profile-link">Profil</a></li>
+            <li><a href="#" id="cart-btn">Keranjang</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Cari produk...">
+        </div>
+
+        <!-- Produk (Menu) -->
+        <div id="product-list">
+        <div class="menu" id="menu-section">
+            <div class="product" data-name="Baso Goreng (Original)" data-price="7000">
+                <img src="ori.jpg" alt="Rawon Malang">
+                <h3>Baso Goreng (Original)</h3>
+                <p>Rp 7.000</p>
+                <button class="add-to-cart">Tambah</button>
+            </div>
+            <div class="product" data-name="Baso Goreng (Pedas-Asin)" data-price="7000">
+                <img src="Pedas.png" alt="Nasi Gudeg">
+                <h3>Baso Goreng (Pedas-Asin)</h3>
+                <p>Rp 7.000</p>
+                <button class="add-to-cart">Tambah</button>
+            </div>
+            <div class="product" data-name="Baso Goreng (Balado)" data-price="7000">
+                <img src="balado.jpg" alt="Tempe Mendoan">
+                <h3>Baso Goreng (Balado)</h3>
+                <p>Rp 7.000</p>
+                <button class="add-to-cart">Tambah</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Keranjang (Hidden) -->
+<div class="cart hidden" id="cart">
+    <h2>Keranjang</h2>
+    <button id="close-cart">Tutup</button>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="total-price">Rp 0</span></p>
+    <p>("Silahkan melakukan konfirmasi pemesanan melalui whatsapp")</p>
+    <div class="input-group">
+      <form id="data" method="POST">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            
+            <div class="input-group">
+                <label for="address">Alamat Lengkap</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+    <button type="submit" id="confirm-order">Konfirmasi via WhatsApp</button>
+    </form>
+</div>
+
+
+
+   
+
+   <!-- Profile Section -->
+   <div class="profile hidden" id="profile-section">
+       <div class="profile-card">
+           <img src="FOJB.png" alt="Profile Picture" class="profile-pic">
+           <h2>Forum Osis Jawa Barat</h2>
+           <p>MForum OSIS Jawa Barat adalah organisasi binaan Dinas Pendidikan Provinsi Jawa Barat, Suatu wadah perkumpulan dan pengembangan kualitas diri para pelajar tingkat SMA/SMK/MA Se-Derajat yang tergabung dalam kepengurusan OSIS ditiap sekolah dengan Visi “menjadi inkubator pemimpin muda Jawa Barat berkarakter STRONG untuk Indonesia Emas Tahun 2045” FOJB ini Didirikan oleh 6 anak muda hebat asli Jawa Barat sejak 5 Januari 2013 menjadikan FOJB sebagai Perkumpulan OSIS tertua di Indonesia. Proses pengukuhannya secara resmi dilakukan oleh Gubernur Jawa Barat saat itu. Dewasa kini Ikatan Alumni FOJB--atau kerap disebut IKAL-- telah mencapai 15.000 anggota yang tersebar di berbagai posisi strategis di Jawa Barat bahkan Luar Negeri. Kedepannya Forum OSIS Jawa Barat akan terus berbenah hingga alumni-alumni nya dapat terus berkarya dan bermanfaat untuk masyarakat Indonesia.</p>
+           <p>IG :<a href="https://www.instagram.com/forumosisjabar.id/profilecard/?igsh=YW5wcW1haWN0czU5">@ForumOSISJawaBarat.Id</a></p>
+          
+       </div>
+       <div class="profile-card">
+           <img src="fojbwil10.png" alt="Profile Picture" class="profile-pic">
+           <h2>Forum OSIS Jawa Barat Wilayah 10</h2>
+           <p>Merupakan sebuah forum untuk Organisasi SISWA Intra Sekolah se-Jawa Barat untuk bagian / regional dari wilayah 10, yaitu Kota Cirebon, Kab.Cirebon, Kab.Kuningan, dimana ia di kelola oleh Koordinator Wilayah - BPH - Koordinator Daerah - Hingga seluruh pengurus wilayah, dimana saat ini sudah memasuki generasi ke-12</p>
+           <p>IG : <a href="https://www.instagram.com/fojbwilayah10/profilecard/?igsh=MWIzczdhNHQ4MGNrbw==" >@fojbwilayah10</a></p>
+       </div>
+       <div class="profile-card">
+           <img src="Ario.png" alt="Profile Picture" class="profile-pic">
+           <h2>Ario Zulkaesi Nubli</h2>
+           <p>"Pengembang/Developer Website Ini</p>
+           <p>Merupakan seorang siswa yang duduk di bangku kelas 11 di SMK PERTIWI KUNINGAN dengan program keahlian / kejuruan "Rekayasa Perangkat Lunak" dan seorang Front-End developer berusia 16 Tahun</p>
+           <p>Alamat: Cirendang, Kuningan, Jawa Barat</p>
+           <p> Bug Report : <br>
+           <a href="https://wa.me/+6281327414126">Whatsapp</a></p>
+       </div>
+   </div>
+
+  
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</body>
+</html>
